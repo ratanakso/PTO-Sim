@@ -17,7 +17,6 @@
 classdef machineClass<handle
     properties (Access = public)%hdf5 file 
         Rs = 4.58;        
-        %load.Rload = -200/1.7;       % Van = 200 Vpeak, Ia = 1.7 A
         Bfric = -100;           % coefficient of friction    
         tau_p = 0.072;          % Magnet pole pitch is 72 mm
         lambda_fd = 8;          % Rload = -200/1.7 Van = 200V 1.7A at 0.7m/s
