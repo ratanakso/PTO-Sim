@@ -17,7 +17,7 @@ close all
 %% Plots for a complex hydraulic PTO-Sim
  
     ptoSim.time = output.ptos.time;
-
+    
     set(0,'DefaultFigureWindowStyle','docked')
 
     f = figure;
@@ -119,6 +119,6 @@ close all
     legend('zDotRel','F_{pto}')
     grid on
 
-    clear pto tot piston valve highAccum lowAccum motor gen logsout f ptoSim pistonC pistonNC valveC valveNC pistonV valveV
+    clear tot piston valve highAccum lowAccum motor gen logsout f ptoSim pistonC pistonNC valveC valveNC pistonV valveV
 
 

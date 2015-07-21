@@ -120,7 +120,7 @@ close all
     title('Absorbed Power and Electrical Power')
     legend('Pabs','Pelec')
 
-    clear pto machine ddload logsout f ptoSim pistonC pistonNC pistonV valveV valveC valveNC
+    clear machine ddload logsout f ptoSim pistonC pistonNC pistonV valveV valveC valveNC
 
 
 

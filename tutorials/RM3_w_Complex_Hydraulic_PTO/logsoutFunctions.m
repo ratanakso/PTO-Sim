@@ -1,5 +1,5 @@
     ptoSim.eff = tot;
-    ptoSim.motor.bf = motor.bf;
+    ptoSim.motor.bf = ptosim.motor.bf;
 
     
     ptoSim.pos = logsout.getElement('pos').Values.Data;

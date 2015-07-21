@@ -81,9 +81,8 @@ classdef ptoSimClass<handle
     end
     
     properties (Access = public)
-        pistonV = 2;
-        
-        valveV = 2;
+        pistonV = 1;        
+        valveV = 1;
         
     end
     

@@ -96,6 +96,6 @@ close all
     legend('absPower','genPower','elecPower')
     grid on
     
-    clear pto piston valve highAccum lowAccum motor gen tot logsout f ptoSim pistonC pistonNC valveC valveNC pistonV valveV
+    clear piston valve highAccum lowAccum motor gen tot logsout f ptoSim pistonC pistonNC valveC valveNC pistonV valveV
 
 
