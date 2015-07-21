@@ -21,7 +21,7 @@ classdef waveClass<handle
         H                           = 'NOT DEFINED'                        % [m] Wave height (regular waves) or significant wave height (irregular waves) (default = 1)
         noWaveHydrodynamicCoeffT    = 'NOT DEFINED'                        % Period of BEM simulation used to determine hydrodynamic coefficients for simulations with no wave. This option is only used with the 'noWave' wave type.
         spectrumType                = 'NOT DEFINED'                        % Type of wave spectrum. Only PM, BS, JS, and Imported spectrum are supported.
-        randPreDefined              = 0;                                   % Only used for irregular waves. Default is equal to 0; if equals to 1,2,3,...,etc, the waves pahse is seeded.
+        randPreDefined              = 0;                                   % Only used for irregular waves. Default is equal to 0; if equals to 1,2,3,...,etc, the waves phase is seeded.
         spectrumDataFile            = 'NOT DEFINED'                        % Data file that contains the spectrum data file. See ---- for format specs
         etaDataFile                 = 'NOT DEFINED'                        % Data file that contains the times-series data file. See ---- for format specs
         numFreq                     = 1001                                 % Number of interpolated wave frequencies (default = 'NOT DEFINED')
