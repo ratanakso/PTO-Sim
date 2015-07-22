@@ -81,8 +81,8 @@ classdef ptoSimClass<handle
     end
     
     properties (Access = public)
-        pistonV = 1;                        % 1 means compressible option is selected    
-        valveV = 1;                         % 1 means compressible option is selected
+        pistonV = 'NOT DEFINED';                        % 1 means compressible option is selected    
+        valveV = 'NOT DEFINED';                         % 1 means compressible option is selected
         
     end
     
@@ -90,6 +90,20 @@ classdef ptoSimClass<handle
         function obj        = ptoSimClass(name)
                  obj.name   = name;
         end
+        
+        function checkPiston(obj)
+            if obj.pistonV ~= obj.valveV
+                error('Piston and valve are selected incorrectly')
+            end
+        end
+        function checkhydraulicType(obj)
+            if obj.pistonV ==1 && ischar(obj.piston.Beta_e) ==1
+                error('Compressible option is selected but the bulk modulus is not defined')
+            elseif obj.pistonV ==2 && ischar(obj.piston.Beta_e)==0
+                error('Noncompressible option selected but the bulk modulus is used') 
+            end
+        end
+               
     end
  
 end

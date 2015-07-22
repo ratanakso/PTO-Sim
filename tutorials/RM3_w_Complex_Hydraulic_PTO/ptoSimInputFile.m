@@ -11,7 +11,8 @@ ptosim = ptoSimClass('Complex_Hydraulic');
 % the same option.
 
 ptosim.pistonV = 1; % Selecting the compressible option for the piston
-ptosim.valveV = 1;  % Selecting the compressible option for the valve
+ptosim.valveV = ptosim.pistonV;  
+checkPiston(ptosim)
 
 %% Piston 
 ptosim.piston.Ap = 0.0378;
@@ -20,6 +21,7 @@ ptosim.piston.Beta_e = 1.86e9;
 ptosim.piston.pAi =2.1333e+07;
 ptosim.piston.pBi =ptosim.piston.pAi;
 
+checkhydraulicType(ptosim)
 %% Valve 
 
 ptosim.valve.Cd = 0.61;

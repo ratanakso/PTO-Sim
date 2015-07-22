@@ -10,7 +10,7 @@ diary('simulation.log')
 fprintf('\nWEC-Sim Read Input File ...   \n'); tic; 
 evalc('wecSimInputFile');
 if exist('ptoSimInputFile.m','file') == 2
-    ptoSimInputFile;                
+    ptoSimInputFile                
 end
 toc;
 
