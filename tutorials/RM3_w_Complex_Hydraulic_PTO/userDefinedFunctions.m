@@ -119,6 +119,6 @@ close all
     legend('zDotRel','F_{pto}')
     grid on
 
-    clear tot piston valve highAccum lowAccum motor gen logsout f ptoSim pistonC pistonNC valveC valveNC pistonV valveV
+    clear tot piston valve highAccum lowAccum motor gen logsout f ptoSim fluidOption noncompressFluid compressFluid
 
 
