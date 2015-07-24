@@ -7,7 +7,7 @@ ptosim = ptoSimClass('Simple_Hydraulic');
 % 1 means compressible option is selected
 % 2 means noncompressible option is selected
 
-ptosim.fluidOption = 2; % Selecting the noncompressible option for the piston
+ptosim.fluidOption = 2; % Selecting the noncompressible option 
 
 %% Piston 
 
