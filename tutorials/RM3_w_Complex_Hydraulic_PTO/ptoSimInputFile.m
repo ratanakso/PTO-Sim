@@ -13,7 +13,7 @@ ptosim = ptoSimClass('Complex_Hydraulic');
 
 ptosim.fluidOption = 1; % Selecting the noncompressible option for the piston
 
-checkFluidOptionNumbers(ptosim)
+% checkFluidOptionNumbers(ptosim)
 
 
 %% Valve 
@@ -49,8 +49,8 @@ ptosim.lowAccum.pIeq = ptosim.lowAccum.pIprecharge/(1-ptosim.lowAccum.VIeq/ptosi
 %% High Pressure Accumulator
 
 ptosim.highAccum.VI0 = 8.5;                                 
-%ptosim.highAccum.del_p_r = 15e6;
-ptosim.highAccum.pIrated = 15e6 + ptosim.lowAccum.pIrated;
+ptosim.highAccum.del_p_r = 15e6;
+ptosim.highAccum.pIrated = ptosim.highAccum.del_p_r + ptosim.lowAccum.pIrated;
 ptosim.highAccum.pIeq = ptosim.lowAccum.pIeq;
 ptosim.highAccum.pIlower_limit = ptosim.highAccum.pIeq;
 ptosim.highAccum.pIupper_limit = 1.5*ptosim.highAccum.pIlower_limit;
@@ -68,7 +68,7 @@ ptosim.piston.pAi = ptosim.lowAccum.pIupper_limit;
 ptosim.piston.pBi = ptosim.piston.pAi;
 
 %% Check Hydraulic Type
-checkHydraulicType(ptosim)
+%checkHydraulicType(ptosim)
 %checkComplexHydraulicPiston(ptosim)
 %% Hydraulic Motor
 
