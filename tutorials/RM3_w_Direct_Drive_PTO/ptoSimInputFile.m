@@ -18,4 +18,4 @@ ptosim.machine.lambda_sd_0 = 8;
 
 ptosim.ddload.Rload = -117.6471;
 
-checkDirectDriveVariables(ptosim)
+%checkDirectDriveVariables(ptosim)
