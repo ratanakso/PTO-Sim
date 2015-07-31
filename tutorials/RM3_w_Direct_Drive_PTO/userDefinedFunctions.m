@@ -119,6 +119,45 @@ close all
     ylabel('Power (kW)')
     title('Absorbed Power and Electrical Power')
     legend('Pabs','Pelec')
+    
+    f = figure;
+    subplot(211)
+    plot(ptoSim.time,ptoSim.Icapacitor1)
+    set(findall(gcf,'type','axes'),'fontsize',16)
+    xlabel('Time (s)')
+    ylabel('Current (A)')
+    title('Icapacitor1')
+    subplot(212)
+    plot(ptoSim.time,ptoSim.Icapacitor2)
+    set(findall(gcf,'type','axes'),'fontsize',16)
+    xlabel('Time (s)')
+    ylabel('Current (A)')    
+    title('Icapacitor2')
+    grid on
+    
+    f = figure;
+    plot(ptoSim.time,ptoSim.Icapacitor1,ptoSim.time,ptoSim.Icapacitor2)
+    set(findall(gcf,'type','axes'),'fontsize',16)
+    xlabel('Time (s)')
+    ylabel('Current (A)')    
+    title('Capacitor currents')
+    grid on
+    
+    f = figure;
+    plot(ptoSim.time,ptoSim.Vabc,ptoSim.time,ptoSim.Vo)
+    set(findall(gcf,'type','axes'),'fontsize',16)
+    xlabel('Time (s)')
+    ylabel('Voltage (V)')    
+    title('Vabc vs. Vo')
+    grid on
+    
+    f = figure;
+    plot(ptoSim.time,ptoSim.elecRecPower/1e3)
+    set(findall(gcf,'type','axes'),'fontsize',16)
+    xlabel('Time (s)')
+    ylabel('Power (kW)')
+    title('Power after Rectified')
+    grid on
 
     clear machine ddload logsout f ptoSim fluidOption noncompressFluid compressFluid
 
