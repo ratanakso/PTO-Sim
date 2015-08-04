@@ -96,6 +96,6 @@ close all
     legend('absPower','genPower','elecPower')
     grid on
     
-    clear piston valve highAccum lowAccum motor gen tot logsout f ptoSim fluidOption noncompressFluid compressFluid
+    clear piston valve accum motor gen tot logsout f ptoSim 
 
 

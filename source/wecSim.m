@@ -52,11 +52,6 @@ sv_regularWaves=Simulink.Variant('typeNum>=10 && typeNum<20');
 sv_irregularWaves=Simulink.Variant('typeNum>=20 && typeNum<30');
 sv_udfWaves=Simulink.Variant('typeNum>=30');
 
-fluidOption = ptosim.fluidOption; 
-compressFluid = Simulink.Variant('fluidOption==1');
-noncompressFluid = Simulink.Variant('fluidOption==2');
-
-
 
 %% Check that the hydro data for each body is given for the same frequencies
 for ii = 1:simu.numWecBodies

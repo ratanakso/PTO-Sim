@@ -1,10 +1,11 @@
 %% Simulation Data
 simu = simulationClass();               %Create the Simulation Variable
 simu.simMechanicsFile = 'RM3.slx';      %Location of Simulink Model File
-simu.endTime=400;                       %Simulation End Time [s]
+simu.endTime=180;                       %Simulation End Time [s]
 simu.dt = 0.001;                          %Simulation Time-Step [s]
 simu.rampT = 100;                       %Wave Ramp Time Length [s]
-
+%simu.mode = 'rapid-accelerator';
+%simu.explorer = 'off';
 %% Wave Information
 %% noWaveCIC, no waves with radiation CIC  
 % waves = waveClass('noWaveCIC'); 
