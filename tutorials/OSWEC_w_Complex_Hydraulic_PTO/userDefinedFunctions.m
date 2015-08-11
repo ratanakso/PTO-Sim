@@ -137,7 +137,7 @@ close all
     legend('Velocity','F_{pto}')
     grid on
 
-    clear tot telemech piston valve accum motor gen logsout f ptoSim 
+    clear tot motionmech piston valve accum motor gen logsout f ptoSim 
 
 
 

@@ -17,7 +17,7 @@ ptosim.directdrive.Rload = -117.6471;
 
 %% Telescope Mechanism
 
-ptosim.telemech.radius = 3;
-ptosim.telemech.offsetZ = 1.3;
-ptosim.telemech.hydArmInit = 5;
+ptosim.motionmech.radius = 3;
+ptosim.motionmech.offsetZ = 1.3;
+ptosim.motionmech.hydArmInit = 5;
 

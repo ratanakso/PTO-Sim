@@ -107,6 +107,6 @@ close all
     legend('absPower','genPower','elecPower')
     grid on
     
-    clear telemech piston valve accum motor gen tot logsout f ptoSim 
+    clear motionmech piston valve accum motor gen tot logsout f ptoSim 
 
 

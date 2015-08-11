@@ -147,6 +147,6 @@ close all
     title('Absorbed Power and Electrical Power')
     legend('Pabs','Pelec')
     
-    clear telemech machine ddload logsout f ptoSim
+    clear motionmech machine ddload logsout f ptoSim
 
 
