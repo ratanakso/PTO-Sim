@@ -40,9 +40,9 @@ ptosim.accum(1).VImin = ptosim.accum(1).VI0*(1-(ptosim.accum(1).pIprecharge/ptos
 
 ptosim.motor.angVelInit = 0;
 ptosim.motor.alpha = 1;
-ptosim.motor.D = 1.28e-4;
+ptosim.motor.D = 0.6*1.28e-4;
 ptosim.motor.J = 20;
-ptosim.motor.bg = 8;
+ptosim.motor.bg = 3;%8;
 ptosim.motor.bf = 0.05*ptosim.motor.bg;
 
 

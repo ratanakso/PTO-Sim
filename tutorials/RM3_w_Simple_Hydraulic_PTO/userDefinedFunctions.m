@@ -17,7 +17,7 @@ close all
 %% Plots for a simple hydraulic PTO-Sim
  
     ptoSim.time = output.ptos.time;
-
+    
     set(0,'DefaultFigureWindowStyle','docked')
 
     f = figure;

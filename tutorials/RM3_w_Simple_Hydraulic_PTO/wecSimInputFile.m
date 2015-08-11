@@ -1,7 +1,7 @@
 %% Simulation Data
 simu = simulationClass();               %Create the Simulation Variable
 simu.simMechanicsFile = 'RM3.slx';      %Location of Simulink Model File
-simu.endTime=200;                       %Simulation End Time [s]
+simu.endTime=400;                       %Simulation End Time [s]
 simu.dt = 0.01;                          %Simulation Time-Step [s]
 simu.rampT = 100;                       %Wave Ramp Time Length [s]
 
@@ -30,7 +30,7 @@ waves.T = 8;                            %Wave Period [s]
 % waves.H = 2.5;                        %Significant Wave Height [m]
 % waves.T = 8;                          %Peak Period [s]
 % waves.spectrumType = 'BS';
-simu.ssCalc = 1;						%Control option to use state space model 
+ simu.ssCalc = 1;						%Control option to use state space model 
 
 %% Irregular Waves using User-Defined Spectrum
 % waves = waveClass('irregularImport');         
@@ -38,7 +38,7 @@ simu.ssCalc = 1;						%Control option to use state space model
 % waves.spectrumDataFile = 'ndbcBuoyData.txt';  
 %                                   %Name of User-Defined Spectrum File [2,:] = [omega, Sf]
 
-% %% User-Defined Time-Series
+%% User-Defined Time-Series
 % waves = waveClass('userDefined');   %Create the Wave Variable and Specify Type
 % waves.etaDataFile = 'umpqua46229_6_2008.mat';  % Name of User-Defined Time-Series File [:,2] = [time, wave_elev]
 
